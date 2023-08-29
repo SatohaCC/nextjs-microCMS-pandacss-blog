@@ -2,9 +2,14 @@ import Link from "next/link";
 import { siteName } from "../../../libs/siteInfo";
 import { Box, Flex } from "../../../styled-system/jsx";
 import { flex } from "../../../styled-system/patterns";
+import { ParentCategoriesEntity } from "../../../types/blog";
 import { menuButton } from "../styles/style";
 
-const DesktopNav = ({ contents }: any) => {
+type Props = {
+	contents: ParentCategoriesEntity[];
+};
+
+const DesktopNav = ({ contents }: Props) => {
 	return (
 		<Flex
 			maxW="1280px"
@@ -26,7 +31,7 @@ const DesktopNav = ({ contents }: any) => {
 			</Box>
 			<Box display={{ base: "none", md: "contents" }}>
 				<div className={flex({ gap: 6 })}>
-					{contents.map((menu: any) => {
+					{contents.map((menu) => {
 						return (
 							<Link key={menu.id} href={`/${menu.id}/page/1`}>
 								<button
