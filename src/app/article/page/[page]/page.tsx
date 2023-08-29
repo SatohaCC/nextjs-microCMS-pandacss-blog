@@ -1,9 +1,9 @@
 import ArticleList from "@/app/_components/ArticleList";
 import Pagination from "@/app/_components/Pagination";
 import { getList } from "../../../../../libs/microcms";
-import { PER_PAGE } from "../../../../../libs/siteInfo";
+import { PAGINATION_REVALIDATE, PER_PAGE } from "../../../../../libs/siteInfo";
 
-export const revalidate = 0;
+export const revalidate = PAGINATION_REVALIDATE;
 
 export async function generateStaticParams() {
 	const { totalCount } = await getList();

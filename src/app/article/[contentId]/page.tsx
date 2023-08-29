@@ -5,11 +5,12 @@ import { processer } from "microcms-richedit-processer";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDetail, getList } from "../../../../libs/microcms";
+import { ARTICLE_REVALIDATE } from "../../../../libs/siteInfo";
 import { formatDate } from "../../../../libs/utils";
 import { css } from "../../../../styled-system/css";
 import { Box } from "../../../../styled-system/jsx";
 
-export const revalidate = 60 * 60 * 24 * 7;
+export const revalidate = ARTICLE_REVALIDATE;
 
 export async function generateStaticParams() {
 	const { contents } = await getList();
