@@ -9,7 +9,7 @@ import { formatDate } from "../../../../libs/utils";
 import { css } from "../../../../styled-system/css";
 import { Box } from "../../../../styled-system/jsx";
 
-export const revalidate = 0;
+export const revalidate = 60 * 60 * 24 * 7;
 
 export async function generateStaticParams() {
 	const { contents } = await getList();
