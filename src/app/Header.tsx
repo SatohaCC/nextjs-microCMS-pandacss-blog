@@ -1,7 +1,10 @@
 import { getMenu } from "../../libs/microcms";
+import { MENU_REVALIDATE } from "../../libs/siteInfo";
 import { css } from "../../styled-system/css";
 import { Box } from "../../styled-system/jsx";
 import DesktopNav from "./_components/DesktopNav";
+
+export const revalidate = MENU_REVALIDATE;
 
 const Header = async () => {
 	const { contents } = await getMenu();
