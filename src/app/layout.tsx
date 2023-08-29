@@ -1,5 +1,3 @@
-import { Inter } from "next/font/google";
-
 import "./globals.css";
 
 import { Suspense } from "react";
@@ -8,8 +6,6 @@ import { Box } from "../../styled-system/jsx";
 import Header from "./Header";
 import Main from "./Main";
 import Loading from "./loading";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
 	title: siteName,
