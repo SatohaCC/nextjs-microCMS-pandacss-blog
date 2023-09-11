@@ -1,5 +1,5 @@
 import { FaGithub, FaTwitter } from "react-icons/fa";
-import { iconsProps } from "../../../../types/types";
+import { iconType } from "../../../../types/types";
 
 export const aboutData = [
 	{
@@ -20,7 +20,7 @@ export const aboutData = [
 	},
 ];
 
-export const iconsData: iconsProps[] = [
+export const iconsData: iconType[] = [
 	{
 		id: 1,
 		title: "twitter",

@@ -1,4 +1,4 @@
-export type iconsProps = {
+export type iconType = {
 	id: number;
 	title: "twitter" | "github";
 	url: string;
