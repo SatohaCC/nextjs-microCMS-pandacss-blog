@@ -33,8 +33,8 @@ type Props = {
 };
 
 const ArticleCard = ({ content }: Props) => {
-	const tags = content
-		.categories!!.filter((tag) => tag.label !== "")
+	const tags = content.categories
+		.filter((tag) => tag.label !== "")
 		.map((a) => a.label);
 
 	return (

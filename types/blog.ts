@@ -8,7 +8,7 @@ export type ArticleType = {
 	title: string;
 	summary: string | null;
 	body: string;
-	categories?: CategoriesEntity[];
+	categories: CategoriesEntity[];
 	img?: Img | null;
 };
 
