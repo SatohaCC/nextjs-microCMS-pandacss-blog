@@ -46,9 +46,8 @@ export default async function StaticDetailPage({
 }: Props) {
 	const content = await getDetail(contentId);
 
-	if (!content) {
-		notFound();
-	}
+	if (!content) return notFound();
+
 	const newContent = await processer(content.body, {
 		code: { enabled: true },
 		img: { lazy: false }, // srcのままにする設定。trueだとdata-srcに変換されてしまう。
