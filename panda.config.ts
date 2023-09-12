@@ -16,6 +16,7 @@ export default defineConfig({
 
 	// The output directory for your css system
 	outdir: "styled-system",
+
 	// Useful for theme customization
 	theme: {
 		semanticTokens: {
@@ -24,6 +25,18 @@ export default defineConfig({
 				secondary: { value: "#ca8c04" },
 				mainText: { value: "#111827" },
 				gray: { value: "#6b7280" },
+			},
+		},
+		extend: {
+			keyframes: {
+				rotateLeft: {
+					"0%": { rotate: "360deg" },
+					"100%": { rotate: "0deg" },
+				},
+				rotateRight: {
+					"0%": { rotate: "0deg" },
+					"100%": { rotate: "360deg" },
+				},
 			},
 		},
 	},
