@@ -4,7 +4,7 @@ import { css } from "../../../../styled-system/css";
 import { Flex } from "../../../../styled-system/jsx";
 import { portfolioType } from "../../../../types/types";
 
-const rotTitleStyle = css({
+const titleStyle = css({
 	color: "gray.900",
 	fontSize: { base: "md", md: "lg", lg: "lg" },
 	fontWeight: "bold",
@@ -19,7 +19,7 @@ const PortfolioRow = ({ data }: Props) => {
 		<div className={css({ pb: "3" })}>
 			<Link href={data.url} target={data.linkType} rel="noopener noreferrer">
 				<Flex alignItems="baseline">
-					<h3 className={rotTitleStyle}>{data.title}</h3>
+					<h3 className={titleStyle}>{data.title}</h3>
 					{data.linkType === "_blank" && <RiExternalLinkLine />}
 				</Flex>
 			</Link>
