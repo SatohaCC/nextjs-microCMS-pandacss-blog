@@ -3,7 +3,7 @@ import { PER_PAGE } from "../../../libs/siteInfo";
 import { cva } from "../../../styled-system/css";
 import { Center, HStack } from "../../../styled-system/jsx";
 
-export const pageButton = cva({
+const pageButton = cva({
 	base: {
 		display: "flex",
 		alignItems: "center",
