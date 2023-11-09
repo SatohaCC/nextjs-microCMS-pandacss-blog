@@ -1,4 +1,7 @@
 {
-	"extends": ["next", "next/core-web-vitals"],
-	"ignorePatterns": [".next", "node_modules", "styled-system"]
+	"extends": [
+		"next/babel",
+		"next/core-web-vitals",
+		"plugin:storybook/recommended"
+	]
 }

@@ -1,3 +1,4 @@
+import { buttonRecipe } from "@/_ui/Button/Button.recipe";
 import { defineConfig } from "@pandacss/dev";
 
 export default defineConfig({
@@ -6,10 +7,7 @@ export default defineConfig({
 
 	presets: ["@pandacss/preset-base", "@park-ui/panda-preset"],
 	// Where to look for your css declarations
-	include: [
-		"./src/components/**/*.{ts,tsx,js,jsx}",
-		"./src/app/**/*.{ts,tsx,js,jsx}",
-	],
+	include: ["./src/_ui/**/*.{ts,tsx,js,jsx}", "./src/app/**/*.{ts,tsx,js,jsx}"],
 
 	// Files to exclude
 	exclude: [],
@@ -20,15 +18,10 @@ export default defineConfig({
 
 	// Useful for theme customization
 	theme: {
-		semanticTokens: {
-			colors: {
-				primary: { value: "#0FEE0F" },
-				secondary: { value: "#ca8c04" },
-				mainText: { value: "#111827" },
-				gray: { value: "#6b7280" },
-			},
-		},
 		extend: {
+			recipes: {
+				button: buttonRecipe,
+			},
 			keyframes: {
 				rotateLeft: {
 					"0%": { rotate: "360deg" },

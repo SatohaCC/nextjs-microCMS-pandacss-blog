@@ -12,18 +12,17 @@ const Header = async () => {
 		<Box
 			className={css({
 				w: "100%",
-				bg: "neutral.50",
 				top: 0,
 				position: "sticky",
 				zIndex: 1,
 				borderBottomWidth: "1px",
 				borderColor: "gray.200",
 				shadow: "xs",
+				bg: "white",
 			})}
+			zIndex={200}
 		>
-			<Box>
-				<DesktopNav contents={contents} />
-			</Box>
+			<DesktopNav contents={contents} />
 		</Box>
 	);
 };
