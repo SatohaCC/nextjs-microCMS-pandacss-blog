@@ -12,21 +12,21 @@ const ArticleList = ({ contents }: Props) => {
 	}
 
 	return (
-		<div>
+		<ul>
 			{contents.map((content) => {
 				const tags = content.categories
 					.filter((category) => category.label !== "")
 					.map((category) => category.label);
 
 				return (
-					<ul key={content.id}>
+					<li key={content.id}>
 						<Box p={3}>
 							<ArticleCardUI content={content} tags={tags} />
 						</Box>
-					</ul>
+					</li>
 				);
 			})}
-		</div>
+		</ul>
 	);
 };
 export default ArticleList;
