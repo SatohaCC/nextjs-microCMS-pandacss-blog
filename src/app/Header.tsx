@@ -16,9 +16,7 @@ const Header = async () => {
 				position: "sticky",
 				zIndex: 1,
 				borderBottomWidth: "1px",
-				borderColor: "gray.200",
 				shadow: "xs",
-				bg: "white",
 			})}
 			zIndex={200}
 		>
