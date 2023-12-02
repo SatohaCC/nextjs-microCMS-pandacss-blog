@@ -6,7 +6,7 @@ type Props = {
 	contents: ArticleType[];
 };
 
-const ArticleList = async ({ contents }: Props) => {
+const ArticleList = ({ contents }: Props) => {
 	if (!contents || contents.length === 0) {
 		return <h1>No contents</h1>;
 	}
