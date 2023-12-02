@@ -16,7 +16,11 @@ export default defineConfig({
 		}),
 	],
 	// Where to look for your css declarations
-	include: ["./src/_ui/**/*.{ts,tsx,js,jsx}", "./src/app/**/*.{ts,tsx,js,jsx}"],
+	include: [
+		"./src/_ui/**/*.{ts,tsx,js,jsx}",
+		"./src/app/**/*.{ts,tsx,js,jsx}",
+		"./stories/**/*.{js,jsx,ts,tsx}",
+	],
 
 	// Files to exclude
 	exclude: [],
