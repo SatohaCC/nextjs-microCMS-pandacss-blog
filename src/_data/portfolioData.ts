@@ -23,7 +23,7 @@ export const portfolioData: portfolioType[] = [
 		],
 	},
 	{
-		title: "damage calculation",
+		title: "ゲームのdamage calculation",
 		url: "https://damage-heaven.com/",
 		linkType: "_blank",
 		text: [
