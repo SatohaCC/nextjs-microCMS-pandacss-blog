@@ -106,6 +106,7 @@ export const buttonRecipe = defineRecipe({
 				color: "gray.12",
 				fontSize: "2xl",
 				_hover: {
+					color: "accent.default",
 					background: "none",
 				},
 			},
