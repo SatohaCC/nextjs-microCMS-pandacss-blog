@@ -5,7 +5,7 @@ type Props = {
 	tags: string[];
 };
 
-export const BlogTags = ({ tags }: Props) => {
+const TagsList = ({ tags }: Props) => {
 	return (
 		<HStack mt="3" mb="3">
 			{tags.map((tag, index) => {
@@ -18,3 +18,5 @@ export const BlogTags = ({ tags }: Props) => {
 		</HStack>
 	);
 };
+
+export default TagsList;

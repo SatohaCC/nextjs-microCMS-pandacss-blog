@@ -16,7 +16,8 @@ export const tagRecipe = defineRecipe({
 		visual: {
 			outline: {
 				borderWidth: "1px",
-				borderColor: "gray.200",
+				borderColor: "gray.3",
+				color: "gray.12",
 				rounded: "md",
 				shadow: "xs",
 			},

@@ -1,6 +1,6 @@
+import ArticleCardUI from "@/_ui/Card/AriticleCardUI";
 import { Box } from "../../../styled-system/jsx";
 import { ArticleType } from "../../../types/blog";
-import ArticleCard from "./ArticleCard";
 
 type Props = {
 	contents: ArticleType[];
@@ -14,9 +14,13 @@ const ArticleList = async ({ contents }: Props) => {
 	return (
 		<div>
 			{contents.map((content) => {
+				const tags = content.categories
+					.filter((category) => category.label !== "")
+					.map((category) => category.label);
+
 				return (
 					<Box key={content.id} p={3}>
-						<ArticleCard content={content} />
+						<ArticleCardUI content={content} tags={tags} />
 					</Box>
 				);
 			})}

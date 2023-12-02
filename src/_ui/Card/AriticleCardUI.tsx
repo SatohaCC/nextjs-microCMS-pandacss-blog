@@ -1,4 +1,4 @@
-import { BlogTags } from "@/app/_components/BlogTags";
+import TagsList from "@/app/_components/TagsList";
 import Link from "next/link";
 import { formatDate } from "../../../libs/utils";
 import { css } from "../../../styled-system/css";
@@ -11,7 +11,6 @@ const textStyle = css({
 
 const titleStyle = css({
 	fontSize: "2xl",
-	color: "gray.12",
 	fontWeight: "bold",
 	pt: "1",
 	pb: "2",
@@ -21,6 +20,8 @@ const cardStyle = css({
 	_hover: {
 		rounded: "lg",
 		shadow: "sm",
+		color: "accent.default",
+		background: "none",
 	},
 	p: "3",
 });
@@ -37,7 +38,7 @@ const ArticleCardUI = (props: Props) => {
 				<div className={textStyle}>{formatDate(props.content.createdAt)}</div>
 				<div className={titleStyle}>{props.content.title}</div>
 				<div className={textStyle}>{props.content.summary}</div>
-				<BlogTags tags={[...props.tags]} />
+				<TagsList tags={[...props.tags]} />
 			</div>
 		</Link>
 	);
