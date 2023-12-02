@@ -10,7 +10,7 @@ const ArticleList = async ({ contents }: Props) => {
 	if (!contents || contents.length === 0) {
 		return <h1>No contents</h1>;
 	}
-	console.log(contents[0].categories);
+	
 
 	return (
 		<div>
