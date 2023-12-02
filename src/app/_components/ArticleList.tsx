@@ -1,4 +1,4 @@
-import ArticleCardUI from "@/_ui/Card/AriticleCardUI";
+import ArticleCardUI from "@/_ui/Card/ArticleCardUI";
 import { ArticleType } from "../../../libs/types";
 import { Box } from "../../../styled-system/jsx";
 
