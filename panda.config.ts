@@ -1,11 +1,19 @@
 import { buttonRecipe } from "@/_ui/Button/Button.recipe";
 import { defineConfig } from "@pandacss/dev";
+import { createPreset } from "@park-ui/panda-preset";
 
 export default defineConfig({
 	// Whether to use css reset
 	preflight: true,
 
-	presets: ["@pandacss/preset-base", "@park-ui/panda-preset"],
+	presets: [
+		"@pandacss/preset-base",
+		createPreset({
+			accentColor: "teal",
+			grayColor: "neutral",
+			borderRadius: "sm",
+		}),
+	],
 	// Where to look for your css declarations
 	include: ["./src/_ui/**/*.{ts,tsx,js,jsx}", "./src/app/**/*.{ts,tsx,js,jsx}"],
 
