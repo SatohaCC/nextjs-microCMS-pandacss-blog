@@ -1,15 +1,14 @@
-import "./globals.css";
-
 import { Suspense } from "react";
-import { siteName } from "../../libs/siteInfo";
+import { siteDescription, siteName } from "../../libs/siteInfo";
 import { Box } from "../../styled-system/jsx";
 import Header from "./Header";
 import Main from "./Main";
+import "./globals.css";
 import Loading from "./loading";
 
 export const metadata = {
 	title: siteName,
-	description: "Satoha's Blog:Tech,Medical,Life",
+	description: siteDescription,
 };
 
 export default function RootLayout({
