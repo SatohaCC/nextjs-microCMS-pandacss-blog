@@ -19,9 +19,11 @@ const ArticleList = async ({ contents }: Props) => {
 					.map((category) => category.label);
 
 				return (
-					<Box key={content.id} p={3}>
-						<ArticleCardUI content={content} tags={tags} />
-					</Box>
+					<ul key={content.id}>
+						<Box p={3}>
+							<ArticleCardUI content={content} tags={tags} />
+						</Box>
+					</ul>
 				);
 			})}
 		</div>
