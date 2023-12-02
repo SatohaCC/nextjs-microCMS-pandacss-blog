@@ -1,7 +1,7 @@
-import { buttonRecipe } from "@/_ui/Button/Button.recipe";
-import { tagRecipe } from "@/_ui/Tag/Tag.recipe";
 import { defineConfig } from "@pandacss/dev";
 import { createPreset } from "@park-ui/panda-preset";
+import { buttonRecipe } from "./src/_ui/Button/Button.recipe";
+import { tagRecipe } from "./src/_ui/Tag/Tag.recipe";
 
 export default defineConfig({
 	// Whether to use css reset

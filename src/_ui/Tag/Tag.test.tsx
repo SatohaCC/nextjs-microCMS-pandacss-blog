@@ -1,14 +1,9 @@
 import { render, screen } from "@testing-library/react";
 import Tag from "./Tag";
 
-describe("TagのLabel表示", () => {
-	test("outline style", () => {
-		render(<Tag visual="outline">taro</Tag>);
-		expect(screen.getByText("taro")).toBeInTheDocument();
-	});
-
-	test("outline style 2", () => {
-		render(<Tag visual="outline">Tech</Tag>);
-		expect(screen.getByText("Tech")).toBeInTheDocument();
+describe("Tagコンポーネント", () => {
+	test("子要素の正しい表示", () => {
+		render(<Tag>Child Content</Tag>);
+		expect(screen.getByText("Child Content")).toBeInTheDocument();
 	});
 });

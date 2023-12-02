@@ -23,11 +23,11 @@ export const Solid: Story = {
 	},
 };
 
-export const Menu_LG: Story = {
+export const Menu_2xl: Story = {
 	args: {
 		visual: "menu",
-		children: "Menu Button LG",
-		size: "lg",
+		children: "Menu Button 2xl",
+		size: "2xl",
 	},
 };
 export const Menu_MD: Story = {
@@ -35,5 +35,14 @@ export const Menu_MD: Story = {
 		visual: "menu",
 		children: "Menu Button LG",
 		size: "md",
+	},
+};
+
+export const Clickable: Story = {
+	args: {
+		visual: "solid",
+		children: "Clickable Button",
+		size: "md",
+		onClick: () => alert("Button clicked"),
 	},
 };

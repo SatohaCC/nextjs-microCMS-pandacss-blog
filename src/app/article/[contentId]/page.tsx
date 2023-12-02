@@ -1,4 +1,3 @@
-import BackBtn from "@/app/_components/BackBtn";
 import "highlight.js/styles/a11y-dark.css";
 import parse from "html-react-parser";
 import { processer } from "microcms-richedit-processer";
@@ -9,6 +8,7 @@ import { ARTICLE_REVALIDATE } from "../../../../libs/siteInfo";
 import { formatDate } from "../../../../libs/utils";
 import { css } from "../../../../styled-system/css";
 import { Box } from "../../../../styled-system/jsx";
+import BackBtn from "../../_components/BackBtn";
 
 export const revalidate = ARTICLE_REVALIDATE;
 

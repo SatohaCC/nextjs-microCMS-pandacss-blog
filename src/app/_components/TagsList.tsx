@@ -1,5 +1,5 @@
-import Tag from "@/_ui/Tag/Tag";
 import { HStack } from "../../../styled-system/jsx";
+import Tag from "../../_ui/Tag/Tag";
 
 type Props = {
 	tags: string[];

@@ -1,6 +1,6 @@
-import ArticleCardUI from "@/_ui/Card/ArticleCardUI";
 import { ArticleType } from "../../../libs/types";
 import { Box } from "../../../styled-system/jsx";
+import ArticleCardUI from "../../_ui/Card/ArticleCardUI";
 
 type Props = {
 	contents: ArticleType[];

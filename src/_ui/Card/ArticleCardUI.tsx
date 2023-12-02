@@ -1,8 +1,8 @@
-import TagsList from "@/app/_components/TagsList";
 import Link from "next/link";
 import { ArticleType } from "../../../libs/types";
 import { formatDate } from "../../../libs/utils";
 import { css } from "../../../styled-system/css";
+import TagsList from "../../app/_components/TagsList";
 
 const textStyle = css({
 	color: "gray.10",
