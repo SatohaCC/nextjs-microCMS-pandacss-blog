@@ -1,9 +1,9 @@
+import Button from "@/_ui/Button/Button";
 import Link from "next/link";
 import { siteName } from "../../../libs/siteInfo";
 import { Box, Flex } from "../../../styled-system/jsx";
 import { flex } from "../../../styled-system/patterns";
 import { ParentCategoriesEntity } from "../../../types/blog";
-import { menuButton } from "../styles/style";
 
 type Props = {
 	contents: ParentCategoriesEntity[];
@@ -19,14 +19,9 @@ const DesktopNav = ({ contents }: Props) => {
 		>
 			<Box>
 				<Link href={"/"}>
-					<button
-						className={menuButton({
-							visual: "text",
-							size: "lg",
-						})}
-					>
+					<Button visual="menu" size="2xl">
 						{siteName}
-					</button>
+					</Button>
 				</Link>
 			</Box>
 			<Box display={{ base: "none", md: "contents" }}>
@@ -34,12 +29,9 @@ const DesktopNav = ({ contents }: Props) => {
 					{contents.map((menu) => {
 						return (
 							<Link key={menu.id} href={`/${menu.id}/page/1`}>
-								<button
-									key={menu.id}
-									className={menuButton({ visual: "text", size: "md" })}
-								>
+								<Button key={menu.id} visual="menu">
 									{menu.label}
-								</button>
+								</Button>
 							</Link>
 						);
 					})}
@@ -47,9 +39,7 @@ const DesktopNav = ({ contents }: Props) => {
 			</Box>
 			<Box>
 				<Link href={"/about"}>
-					<button className={menuButton({ visual: "text", size: "md" })}>
-						Profile
-					</button>
+					<Button visual="menu">Profile</Button>
 				</Link>
 			</Box>
 		</Flex>

@@ -9,10 +9,11 @@ export const tagRecipe = defineRecipe({
 		p: "1",
 		fontSize: "xs",
 	},
-
+	defaultVariants: {
+		visual: "outline",
+	},
 	variants: {
 		visual: {
-			solid: { bg: "gray.200", color: "white", rounded: "md" },
 			outline: {
 				borderWidth: "1px",
 				borderColor: "gray.200",

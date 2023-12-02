@@ -20,12 +20,14 @@ export const buttonRecipe = defineRecipe({
 		verticalAlign: "middle",
 		whiteSpace: "nowrap",
 	},
+
 	defaultVariants: {
-		variant: "solid",
+		visual: "solid",
 		size: "md",
 	},
+
 	variants: {
-		variant: {
+		visual: {
 			solid: {
 				background: "accent.default",
 				color: "accent.fg",
@@ -99,6 +101,14 @@ export const buttonRecipe = defineRecipe({
 				px: "0!",
 				minW: "0!",
 			},
+			menu: {
+				background: "none",
+				color: "gray.12",
+				fontSize: "2xl",
+				_hover: {
+					background: "none",
+				},
+			},
 		},
 		size: {
 			xs: {
@@ -127,7 +137,7 @@ export const buttonRecipe = defineRecipe({
 			md: {
 				h: "10",
 				minW: "10",
-				textStyle: "sm",
+				textStyle: "md",
 				px: "4",
 				gap: "2",
 				"& svg": {

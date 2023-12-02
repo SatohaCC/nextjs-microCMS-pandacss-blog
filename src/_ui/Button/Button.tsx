@@ -2,22 +2,15 @@ import { ReactNode } from "react";
 import { type RecipeVariantProps } from "../../../styled-system/css";
 import { button } from "../../../styled-system/recipes";
 
-interface Props {
-	variant?: "solid" | "outline" | "ghost" | "link";
-	size?: "sm" | "md" | "lg" | "xl" | "2xl";
-	children: string;
-	onClick?: () => void;
-}
-
 type ButtonProps = {
 	children: ReactNode;
 	onClick?: () => void;
 } & RecipeVariantProps<typeof button>;
 
 const Button = (props: ButtonProps) => {
-	const { children, size, variant } = props;
+	const { children, size, visual } = props;
 	return (
-		<button {...props} className={button({ size, variant })}>
+		<button {...props} className={button({ size, visual })}>
 			{children}
 		</button>
 	);
