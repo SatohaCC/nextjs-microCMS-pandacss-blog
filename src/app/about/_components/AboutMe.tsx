@@ -26,7 +26,7 @@ const iconStyle = cva({
 const AboutMe = () => {
 	return (
 		<div>
-			<Flex className={css({ pb: "5" })} alignItems="baseline">
+			<Flex pb={3} alignItems="baseline">
 				<h1 className={nameStyle}>{myName}</h1>
 				{iconsData.map((icon) => {
 					return (
