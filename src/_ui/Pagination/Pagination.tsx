@@ -17,7 +17,12 @@ const pageButton = cva({
 
 	variants: {
 		visual: {
-			solid: { bg: "gray.10", color: "white", p: "2", justifyItems: "center" },
+			solid: {
+				bg: "accent.default",
+				color: "accent.fg",
+				p: "2",
+				justifyItems: "center",
+			},
 			outline: { borderWidth: "1px", borderColor: "gray.8", p: "2" },
 		},
 	},
