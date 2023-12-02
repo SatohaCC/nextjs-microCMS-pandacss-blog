@@ -1,17 +1,17 @@
-import { Divider } from "../../../styled-system/jsx";
+import { Divider, Stack } from "../../../styled-system/jsx";
 import AboutMe from "./_components/AboutMe";
 import Portfolios from "./_components/Portfolios";
 import Qualifications from "./_components/Qualifications";
 
 const page = () => {
 	return (
-		<div>
+		<Stack px={5}>
 			<AboutMe />
-			<Divider color="gray.200" pb="3" />
+			<Divider pb="5" />
 			<Qualifications />
-			<Divider color="gray.200" pb="3" />
+			<Divider pb="5" />
 			<Portfolios />
-		</div>
+		</Stack>
 	);
 };
 

@@ -1,10 +1,17 @@
+import { css } from "../../../../styled-system/css";
 import { portfolioData } from "../../../_data/portfolioData";
 import PortfolioRow from "./PortfolioRow";
-import { boxStyle, headStyle } from "./styles/style";
+
+const headStyle = css({
+	fontSize: { base: "md", md: "lg", lg: "lg" },
+	fontWeight: "bold",
+	color: "amber.11",
+	py: "5",
+});
 
 const Portfolios = () => {
 	return (
-		<div className={boxStyle}>
+		<div>
 			<h2 className={headStyle}>Portfolios</h2>
 			<div>
 				{portfolioData.map((data, index) => {

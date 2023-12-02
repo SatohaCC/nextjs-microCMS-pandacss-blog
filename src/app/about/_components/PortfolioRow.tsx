@@ -15,7 +15,7 @@ type Props = {
 
 const PortfolioRow = ({ data }: Props) => {
 	return (
-		<div className={css({ pb: "3" })}>
+		<div>
 			<Link href={data.url} target={data.linkType} rel="noopener noreferrer">
 				<Flex alignItems="baseline">
 					<h3 className={titleStyle}>{data.title}</h3>

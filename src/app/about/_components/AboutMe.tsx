@@ -3,7 +3,6 @@ import { myName } from "../../../../libs/siteInfo";
 import { css, cva } from "../../../../styled-system/css";
 import { Flex } from "../../../../styled-system/jsx";
 import { aboutData, iconsData } from "../../../_data/aboutData";
-import { boxStyle } from "./styles/style";
 
 const nameStyle = css({
 	color: "amber.11",
@@ -26,7 +25,7 @@ const iconStyle = cva({
 
 const AboutMe = () => {
 	return (
-		<div className={boxStyle}>
+		<div>
 			<Flex className={css({ pb: "5" })} alignItems="baseline">
 				<h1 className={nameStyle}>{myName}</h1>
 				{iconsData.map((icon) => {
