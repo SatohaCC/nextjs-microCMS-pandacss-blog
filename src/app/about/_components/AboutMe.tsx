@@ -2,10 +2,11 @@ import Link from "next/link";
 import { myName } from "../../../../libs/siteInfo";
 import { css, cva } from "../../../../styled-system/css";
 import { Flex } from "../../../../styled-system/jsx";
-import { aboutData, iconsData } from "../data/aboutData";
-import { boxStyle } from "../styles/style";
+import { aboutData, iconsData } from "../../../_data/aboutData";
+import { boxStyle } from "./styles/style";
 
 const nameStyle = css({
+	color: "amber.11",
 	fontSize: { base: "3xl", md: "5xl", lg: "5xl" },
 	fontWeight: "bold",
 });

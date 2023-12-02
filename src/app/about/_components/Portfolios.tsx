@@ -1,6 +1,6 @@
-import { portfolioData } from "../data/portfolioData";
-import { boxStyle, headStyle } from "../styles/style";
+import { portfolioData } from "../../../_data/portfolioData";
 import PortfolioRow from "./PortfolioRow";
+import { boxStyle, headStyle } from "./styles/style";
 
 const Portfolios = () => {
 	return (

@@ -1,6 +1,6 @@
 import { grid } from "../../../../styled-system/patterns";
-import { qualificationsData } from "../data/qualificationsData";
-import { boxStyle, headStyle } from "../styles/style";
+import { qualificationsData } from "../../../_data/qualificationsData";
+import { boxStyle, headStyle } from "./styles/style";
 
 const Qualifications = () => {
 	return (
