@@ -61,7 +61,7 @@ export default defineConfig({
 			mono: "Menlo, monospace",
 		},
 		a: {
-			color: "plum.11",
+			color: "violet.11",
 			_hover: { color: "teal.10", textDecoration: "none" },
 			cursor: "pointer",
 		},

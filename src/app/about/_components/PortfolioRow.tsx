@@ -5,7 +5,6 @@ import { Flex } from "../../../../styled-system/jsx";
 import { portfolioType } from "../../../../types/types";
 
 const titleStyle = css({
-	color: "gray.900",
 	fontSize: { base: "md", md: "lg", lg: "lg" },
 	fontWeight: "bold",
 });
