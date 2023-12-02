@@ -23,7 +23,12 @@ const pageButton = cva({
 				p: "2",
 				justifyItems: "center",
 			},
-			outline: { borderWidth: "1px", borderColor: "gray.8", p: "2" },
+			outline: {
+				color: "GrayText",
+				borderWidth: "1px",
+				borderColor: "gray.8",
+				p: "2",
+			},
 		},
 	},
 });

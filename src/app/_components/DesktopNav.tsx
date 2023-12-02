@@ -29,7 +29,7 @@ const DesktopNav = ({ contents }: Props) => {
 					{contents.map((menu) => {
 						return (
 							<Link key={menu.id} href={`/${menu.id}/page/1`}>
-								<Button key={menu.id} visual="menu">
+								<Button key={menu.id} visual="menu" size="xl">
 									{menu.label}
 								</Button>
 							</Link>
@@ -39,7 +39,9 @@ const DesktopNav = ({ contents }: Props) => {
 			</Box>
 			<Box>
 				<Link href={"/about"}>
-					<Button visual="menu">Profile</Button>
+					<Button visual="menu" size="xl">
+						Profile
+					</Button>
 				</Link>
 			</Box>
 		</Flex>

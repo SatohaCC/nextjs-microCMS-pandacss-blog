@@ -104,7 +104,6 @@ export const buttonRecipe = defineRecipe({
 			menu: {
 				background: "none",
 				color: "gray.12",
-				fontSize: "2xl",
 				_hover: {
 					color: "accent.default",
 					background: "none",
@@ -160,7 +159,7 @@ export const buttonRecipe = defineRecipe({
 			xl: {
 				h: "12",
 				minW: "12",
-				textStyle: "md",
+				textStyle: "xl",
 				px: "5",
 				gap: "2.5",
 				"& svg": {
@@ -171,7 +170,7 @@ export const buttonRecipe = defineRecipe({
 			"2xl": {
 				h: "16",
 				minW: "16",
-				textStyle: "lg",
+				textStyle: "2xl",
 				px: "7",
 				gap: "3",
 				"& svg": {
