@@ -1,5 +1,5 @@
 import { ArticleType } from "../../../libs/types";
-import { Box } from "../../../styled-system/jsx";
+import { css } from "../../../styled-system/css";
 import ArticleCardUI from "../../_ui/Card/ArticleCardUI";
 
 type Props = {
@@ -19,10 +19,8 @@ const ArticleList = ({ contents }: Props) => {
 					.map((category) => category.label);
 
 				return (
-					<li key={content.id}>
-						<Box p={3}>
-							<ArticleCardUI content={content} tags={tags} />
-						</Box>
+					<li key={content.id} className={css({ p: "3" })}>
+						<ArticleCardUI content={content} tags={tags} />
 					</li>
 				);
 			})}
