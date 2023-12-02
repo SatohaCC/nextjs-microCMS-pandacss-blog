@@ -12,6 +12,7 @@ const Header = async () => {
 		<Box
 			className={css({
 				w: "100%",
+				bg: "neutral.1",
 				top: 0,
 				position: "sticky",
 				zIndex: 1,
