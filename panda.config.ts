@@ -15,7 +15,6 @@ export default defineConfig({
 			grayColor: "neutral",
 			borderRadius: "sm",
 		}),
-		"@park-ui/panda-preset",
 	],
 	// Where to look for your css declarations
 	include: ["./src/_ui/**/*.{ts,tsx,js,jsx}", "./src/app/**/*.{ts,tsx,js,jsx}"],

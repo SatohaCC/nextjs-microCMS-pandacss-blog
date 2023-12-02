@@ -2,6 +2,7 @@ import { css } from "../../styled-system/css";
 
 const loader = css({
 	position: "absolute",
+	cursor: "none",
 	top: "calc(50% - 50px)",
 	left: "calc(50% - 50px)",
 	width: "100px",
@@ -10,6 +11,7 @@ const loader = css({
 
 const circle = css({
 	position: "absolute",
+	cursor: "none",
 	top: 0,
 	left: 0,
 	width: "100%",
