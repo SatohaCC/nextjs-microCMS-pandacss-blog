@@ -11,6 +11,7 @@ interface Props {
 
 type ButtonProps = {
 	children: ReactNode;
+	onClick?: () => void;
 } & RecipeVariantProps<typeof button>;
 
 const Button = (props: ButtonProps) => {
