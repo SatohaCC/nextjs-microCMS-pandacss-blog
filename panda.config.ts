@@ -1,4 +1,5 @@
 import { buttonRecipe } from "@/_ui/Button/Button.recipe";
+import { tagRecipe } from "@/_ui/Tag/Tag.recipe";
 import { defineConfig } from "@pandacss/dev";
 import { createPreset } from "@park-ui/panda-preset";
 
@@ -29,6 +30,7 @@ export default defineConfig({
 		extend: {
 			recipes: {
 				button: buttonRecipe,
+				tag: tagRecipe,
 			},
 			keyframes: {
 				rotateLeft: {
