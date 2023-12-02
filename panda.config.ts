@@ -53,7 +53,7 @@ export default defineConfig({
 			overflowY: "scroll",
 		},
 		body: {
-			bg: { base: "neutral.50", _dark: "#2C2C2C" },
+			bg: { base: "neutral.1", _dark: "#2C2C2C" },
 			marginTop: "0",
 		},
 		fonts: {
@@ -61,8 +61,8 @@ export default defineConfig({
 			mono: "Menlo, monospace",
 		},
 		a: {
-			color: "indigo.600",
-			_hover: { color: "teal.600", textDecoration: "none" },
+			color: "plum.11",
+			_hover: { color: "teal.10", textDecoration: "none" },
 			cursor: "pointer",
 		},
 		h1: {

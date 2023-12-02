@@ -5,8 +5,8 @@ import { css } from "../../../styled-system/css";
 import { ArticleType } from "../../../types/blog";
 
 const textStyle = css({
-	fontSize: "sm",
 	color: "gray.10",
+	fontSize: "sm",
 });
 
 const titleStyle = css({
@@ -17,6 +17,7 @@ const titleStyle = css({
 });
 
 const cardStyle = css({
+	color: "gray.12",
 	_hover: {
 		rounded: "lg",
 		shadow: "sm",
