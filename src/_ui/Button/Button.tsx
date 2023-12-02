@@ -4,7 +4,7 @@ import { button } from "../../../styled-system/recipes";
 
 type ButtonProps = {
 	children: ReactNode;
-	onClick?: () => void;
+	onClick?: React.MouseEventHandler<HTMLButtonElement>;
 } & RecipeVariantProps<typeof button>;
 
 const Button = (props: ButtonProps) => {

@@ -4,7 +4,7 @@ import { tag } from "../../../styled-system/recipes";
 
 type Props = {
 	children: ReactNode;
-	onClick?: () => void;
+	onClick?: React.MouseEventHandler<HTMLButtonElement>;
 } & RecipeVariantProps<typeof tag>;
 
 const Tag = (props: Props) => {
