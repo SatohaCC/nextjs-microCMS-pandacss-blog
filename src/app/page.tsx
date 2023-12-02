@@ -1,7 +1,7 @@
 import { getList } from "../../libs/microcms";
 import { PAGINATION_REVALIDATE } from "../../libs/siteInfo";
+import Pagination from "../_ui/Pagination/Pagination";
 import ArticleList from "./_components/ArticleList";
-import Pagination from "./_components/Pagination";
 
 export const revalidate = PAGINATION_REVALIDATE;
 

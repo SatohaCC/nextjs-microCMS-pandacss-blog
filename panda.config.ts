@@ -1,5 +1,6 @@
 import { buttonRecipe } from "@/_ui/Button/Button.recipe";
 import { tagRecipe } from "@/_ui/Tag/Tag.recipe";
+
 import { defineConfig } from "@pandacss/dev";
 import { createPreset } from "@park-ui/panda-preset";
 
@@ -14,6 +15,7 @@ export default defineConfig({
 			grayColor: "neutral",
 			borderRadius: "sm",
 		}),
+		"@park-ui/panda-preset",
 	],
 	// Where to look for your css declarations
 	include: ["./src/_ui/**/*.{ts,tsx,js,jsx}", "./src/app/**/*.{ts,tsx,js,jsx}"],
@@ -32,6 +34,7 @@ export default defineConfig({
 				button: buttonRecipe,
 				tag: tagRecipe,
 			},
+
 			keyframes: {
 				rotateLeft: {
 					"0%": { rotate: "360deg" },

@@ -1,5 +1,5 @@
+import Pagination from "@/_ui/Pagination/Pagination";
 import ArticleList from "@/app/_components/ArticleList";
-import Pagination from "@/app/_components/Pagination";
 import { getList, getMenu } from "../../../../../libs/microcms";
 import { PAGINATION_REVALIDATE, PER_PAGE } from "../../../../../libs/siteInfo";
 
