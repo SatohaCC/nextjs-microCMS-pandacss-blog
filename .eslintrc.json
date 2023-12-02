@@ -1,8 +1,3 @@
 {
- "extends": [
-  "next/babel",
-  "next/core-web-vitals",
-  "plugin:storybook/recommended",
-  "plugin:storybook/recommended"
- ]
+	"extends": ["next", "next/core-web-vitals", "plugin:storybook/recommended"]
 }
