@@ -1,4 +1,4 @@
-import { portfolioType } from "../../types/types";
+import { portfolioType } from "../../libs/types";
 
 export const portfolioData: portfolioType[] = [
 	{

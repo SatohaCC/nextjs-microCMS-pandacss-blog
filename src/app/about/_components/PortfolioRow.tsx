@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { RiExternalLinkLine } from "react-icons/ri";
+import { portfolioType } from "../../../../libs/types";
 import { css } from "../../../../styled-system/css";
 import { Flex } from "../../../../styled-system/jsx";
-import { portfolioType } from "../../../../types/types";
 
 const titleStyle = css({
 	fontSize: { base: "md", md: "lg", lg: "lg" },

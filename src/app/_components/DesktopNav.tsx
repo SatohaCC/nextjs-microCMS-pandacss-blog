@@ -1,9 +1,9 @@
 import Button from "@/_ui/Button/Button";
 import Link from "next/link";
 import { siteName } from "../../../libs/siteInfo";
+import { ParentCategoriesEntity } from "../../../libs/types";
 import { Box, Flex } from "../../../styled-system/jsx";
 import { flex } from "../../../styled-system/patterns";
-import { ParentCategoriesEntity } from "../../../types/blog";
 
 type Props = {
 	contents: ParentCategoriesEntity[];

@@ -1,6 +1,6 @@
 import type { MicroCMSQueries } from "microcms-js-sdk";
 import { createClient } from "microcms-js-sdk";
-import { ArticleType, ParentCategoriesEntity } from "../types/blog";
+import { ArticleType, ParentCategoriesEntity } from "./types";
 
 if (!process.env.MICROCMS_SERVICE_DOMAIN) {
 	throw new Error("MICROCMS_SERVICE_DOMAIN is required");
