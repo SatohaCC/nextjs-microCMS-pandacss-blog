@@ -25,9 +25,7 @@ export async function generateStaticParams() {
 }
 
 type Props = {
-	params: {
-		contentId: string;
-	};
+	params: { contentId: string };
 };
 
 export async function generateMetadata({
