@@ -1,5 +1,10 @@
-import type { MicroCMSQueries } from "microcms-js-sdk";
+import type {
+	MicroCMSContentId,
+	MicroCMSDate,
+	MicroCMSQueries,
+} from "microcms-js-sdk";
 import { createClient } from "microcms-js-sdk";
+import { PER_PAGE } from "./siteInfo";
 import { ArticleType, ParentCategoriesEntity } from "./types";
 
 if (!process.env.MICROCMS_SERVICE_DOMAIN) {
@@ -48,4 +53,27 @@ export const getMenu = async (queries?: MicroCMSQueries) => {
 	});
 
 	return listData;
+};
+
+const range = (start: number, end: number) =>
+	[...Array(end - start + 1)].map((_, i) => start + i);
+
+type getPathsProps = {
+	contents?: (ParentCategoriesEntity & MicroCMSContentId & MicroCMSDate)[];
+	totalCount: number;
+};
+
+// ページネーション用のパスを生成する
+export const getPaths = ({ contents = [], totalCount }: getPathsProps) => {
+	const totalPages = Math.ceil(totalCount / PER_PAGE);
+
+	const paths =
+		contents.length === 0
+			? range(2, totalPages).map((num) => ({ page: `${num}` }))
+			: contents.map((cate) =>
+					range(1, totalPages).map((num) => ({
+						page: `${cate.label}/page/${num}`,
+					}))
+			  );
+	return paths;
 };

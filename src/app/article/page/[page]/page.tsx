@@ -1,4 +1,4 @@
-import { getList } from "../../../../../libs/microcms";
+import { getList, getPaths } from "../../../../../libs/microcms";
 import { PAGINATION_REVALIDATE, PER_PAGE } from "../../../../../libs/siteInfo";
 import Pagination from "../../../../_ui/Pagination/Pagination";
 import ArticleList from "../../../_components/ArticleList";
@@ -7,21 +7,11 @@ export const revalidate = PAGINATION_REVALIDATE;
 
 export async function generateStaticParams() {
 	const { totalCount } = await getList();
-
-	const range = (start: number, end: number) =>
-		[...Array(end - start + 1)].map((_, i) => start + i);
-
-	const paths = range(2, Math.ceil(totalCount / PER_PAGE)).map((num) => ({
-		page: `${num}`,
-	}));
-
-	return paths;
+	return getPaths({ totalCount });
 }
 
 type Props = {
-	params: {
-		page: string;
-	};
+	params: { page: string };
 };
 
 export default async function PageIndex({ params: { page } }: Props) {
