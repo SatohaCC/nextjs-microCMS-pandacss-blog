@@ -5,14 +5,17 @@ import { Center, HStack } from "../../../styled-system/jsx";
 
 const pageButton = cva({
 	base: {
-		display: "flex",
 		alignItems: "center",
-		justifyContent: "center",
+		appearance: "none",
 		cursor: "pointer",
+		display: "inline-flex",
 		fontSize: "md",
-		w: "12",
+		fontWeight: "semibold",
 		h: "12",
+		minWidth: "0",
+		justifyContent: "center",
 		rounded: "md",
+		w: "12",
 	},
 
 	variants: {
@@ -22,12 +25,27 @@ const pageButton = cva({
 				color: "accent.fg",
 				p: "2",
 				justifyItems: "center",
+				_hover: {
+					background: "accent.emphasized",
+				},
+				_focusVisible: {
+					outlineOffset: "2px",
+					outline: "2px solid",
+					outlineColor: "border.accent",
+				},
 			},
 			outline: {
 				color: "GrayText",
 				borderWidth: "1px",
-				borderColor: "gray.8",
-				p: "2",
+				borderColor: "border.default",
+				_hover: {
+					background: "gray.a2",
+				},
+				_focusVisible: {
+					outlineOffset: "2px",
+					outline: "2px solid",
+					outlineColor: "border.outline",
+				},
 			},
 		},
 	},
