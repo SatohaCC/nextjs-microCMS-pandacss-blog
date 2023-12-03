@@ -76,6 +76,6 @@ describe("ArticleList Component", () => {
 	});
 	test("contentsの数だけ一覧表示される", () => {
 		render(<ArticleList contents={mockContents} />);
-		expect(screen.getAllByRole("listitem")).toHaveLength(2);
+		expect(screen.getAllByRole("listitem")).toHaveLength(mockContents.length);
 	});
 });
