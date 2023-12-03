@@ -14,10 +14,6 @@ export const aboutData = [
 		id: 3,
 		text: "GitHubはPrivateばっかり。",
 	},
-	{
-		id: 4,
-		text: "薬の勉強をしていました",
-	},
 ];
 
 export const iconsData: iconType[] = [
