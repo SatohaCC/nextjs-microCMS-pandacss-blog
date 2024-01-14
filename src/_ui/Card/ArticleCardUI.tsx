@@ -32,14 +32,15 @@ type Props = {
 	tags: string[];
 };
 
-const ArticleCardUI = (props: Props) => {
+const ArticleCardUI = ({ content, tags }: Props) => {
+	const { id, createdAt, title, summary } = content;
 	return (
-		<Link href={`/article/${props.content.id}`}>
+		<Link href={`/article/${id}`}>
 			<div className={cardStyle}>
-				<div className={textStyle}>{formatDate(props.content.createdAt)}</div>
-				<div className={titleStyle}>{props.content.title}</div>
-				<div className={textStyle}>{props.content.summary}</div>
-				<TagsList tags={[...props.tags]} />
+				<div className={textStyle}>{formatDate(createdAt)}</div>
+				<div className={titleStyle}>{title}</div>
+				<div className={textStyle}>{summary}</div>
+				<TagsList tags={[...tags]} />
 			</div>
 		</Link>
 	);
