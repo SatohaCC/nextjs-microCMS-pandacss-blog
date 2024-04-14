@@ -6,6 +6,7 @@ describe("Pagination Component", () => {
 	const totalCount = 50; // 全アイテム数
 	const category = "article";
 
+	//TODO :fix
 	describe("categoryあり", () => {
 		test("正しいページ数が表示されること", () => {
 			render(
