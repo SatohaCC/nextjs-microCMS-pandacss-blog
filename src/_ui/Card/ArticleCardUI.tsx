@@ -19,10 +19,7 @@ const titleStyle = css({
 const cardStyle = css({
 	color: "gray.12",
 	_hover: {
-		rounded: "lg",
-		shadow: "sm",
 		color: "accent.default",
-		background: "none",
 	},
 	p: "3",
 });
